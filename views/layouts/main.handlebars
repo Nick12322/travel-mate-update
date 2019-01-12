@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="DESCRIPTION HERE">
+    <meta name="author" content="Andia, Liz, Kimberly, Nick">
+    <link rel="icon" href="/assets/img/icon.png">
+    <title>TravelMate</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/star-rating-svg.css">
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        
+    <script src="/assets/js/jquery.star-rating-svg.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- ==============  NAVBAR  ============== -->
+
+    <nav class="navbar navbar-fluid navbar-light bg-light">
+
+        <a class="navbar-brand mr-auto" href="/">
+            <img src="/assets/img/navbar-icon.png" height="75px" alt="">
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary btn-lg my-2 my-sm-0 mr-2" type="submit">Search</button>
+        </form>
+        <a class="nav-link dropdown-toggle btn btn-success btn-lg text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            {{#if user}}
+            <a class="dropdown-item noreact">Welcome back {{ user.username }}!</a>
+            <a class="dropdown-item" href="/settings">Control Panel</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/logout">Log Out</a>
+            {{else}}
+            <a class="dropdown-item noreact">Welcome!</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/signup">Sign Up</a>
+            <a class="dropdown-item" href="/login">Log In</a>
+            {{/if}}
+        </div>
+
+    </nav>
+
+    {{{ body }}}
+
+    <footer class="footer text-center bg-dark">
+
+        <p class="mb-0">
+            <i class="far fa-copyright"></i> 2018 TravelMate</p>
+
+    </footer>
+
+
+    <!-- Bootstrap Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
