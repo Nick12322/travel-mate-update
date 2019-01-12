@@ -122,3 +122,7 @@ background-color: 	#7F345D;
 #profileBtn:hover {
     background-color: var(--limegreen);
 }
+
+#afraidText {
+    text-align: justify
+}
