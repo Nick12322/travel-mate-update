@@ -70,17 +70,6 @@ module.exports = function (sequelize, DataTypes) {
         isUrl: true
       }
     }
-
-    // host: {
-    //   type:  DataTypes.BOOLEAN,
-    //   defaultValue: false
-    // },
-
-    // hostee: {
-    //   type: DataTypes.BOOLEAN,
-    //   defaultValue: false
-    // }
-
   });
   //
   User.associate = function (models) {
