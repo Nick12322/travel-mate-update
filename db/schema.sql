@@ -11,12 +11,12 @@ CREATE TABLE register
 	password VARCHAR (255) NOT NULL,
 	handle VARCHAR (50) NOT NULL,
     location VARCHAR (255) NOT NULL,
-    interests VARCHAR
-	activities VARCHAR
-	aboutYou VARCHAR 
-	profilePhoto VARCHAR
-	coverPhoto VARCHAR
-	host BOOLEAN
-	hostee BOOLEAN
+    interests TEXT,
+	activities TEXT,
+	aboutYou MEDIUMTEXT,
+	profilePhoto MEDIUMTEXT,
+	coverPhoto MEDIUMTEXT,
+	host BOOLEAN,
+	hostee BOOLEAN,
 	PRIMARY KEY (id)
 );
