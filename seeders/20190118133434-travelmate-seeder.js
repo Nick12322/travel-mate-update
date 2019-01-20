@@ -41,6 +41,19 @@ module.exports = {
           username: "tJohnson",
           createdAt: new Date(),
           updatedAt: new Date()
+        },{
+          name: "Alan Robb",
+          email: "arobb@gmail.com",
+          password: "password",
+          location: "San Diego",
+          interests: "Whatever you want",
+          about: "Excited to meet you!!",
+          activities: "It's a blah blah kind of blah blah blah blah blah",
+          profilePhoto: "https://steemitimages.com/DQmSA6J7q5C5bMFiHQ85XgBXsYE3fZmBcAmjPvJNYkStBRQ/3403978938_249c74d920_b.jpg",
+          coverPhoto: "https://images.unsplash.com/photo-1504660069764-2b37e279874a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7945a4d590c31ea4887f50ab42dd6d17&auto=format&fit=crop&w=800&q=60",
+          username: "tJohnson",
+          createdAt: new Date(),
+          updatedAt: new Date()
         }
       ]);
     },
