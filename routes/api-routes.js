@@ -5,7 +5,11 @@ var passport = require("../config/passport");
 module.exports = function (app) {
   
   app.get("/api/members/:id", (req, res) => {
-    db.User.findAll()
+    db.User.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
     .then(data => {
       res.json(data);
     })

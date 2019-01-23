@@ -16,9 +16,9 @@ $(document).ready(function () {
 			profilePhoto: $("#profilePhoto").val().trim(),
 			coverPhoto: $("#coverPhoto").val().trim(),
 			//if host is checked then make key value of object true, otherwise make it false
-			host: ($('input[name=optradio]:checked').val() === "host") ? true : false,
-			//if hostee is checked then make key value of object true, otherwise make it false
-			hostee: ($('input[name=optradio]:checked').val() === "hostee") ? true : false,
+			// host: ($('input[name=optradio]:checked').val() === "host") ? true : false,
+			// //if hostee is checked then make key value of object true, otherwise make it false
+			// hostee: ($('input[name=optradio]:checked').val() === "hostee") ? true : false,
 		};
 
 		$.post("/api/signup", newUser)
@@ -26,7 +26,7 @@ $(document).ready(function () {
 			.then(function (data) {
 				// log the data we found
 				console.log(data);
-				// tell the user we're adding their new profile with an alert window? - Do we need this?
+				// tell the user we're adding their new profile with an alert window.
 				alert("Your account has been created!");
 			});
 
