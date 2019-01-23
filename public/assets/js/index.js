@@ -30,11 +30,12 @@ $(document).ready(function () {
             console.log("hello")
             console.log(res.length)
             $(".card").remove();
+            $(".profileCard").remove();
             $(".errorMessage").remove();
             if (res.length > 0) {
                 for (var i = 0; i <= res.length; i++) {
                     var _str = (res[i].about.length > 150) ? res[i].about.substr(0, 150) + "..." : res[i].about;
-                    var card = $("<div>").addClass("col-md-4").append("<div class='card text-center'> <a href='/users?member_id=" + res[i].id + "'><img class='card-img-top img-fluid' src='" + res[i].profilePhoto + "' alt = 'user profile picture' style='width: 100%'></a> <div class = 'card-body'> <h5 class-'card-title' style='text-align: center'>" + res[i].name + "</h5> <p class='card-text'>" + _str + "</p><a href='/users?member_id=" + res[i].id + "' class='btn btn-primary' id=profileBtn style='margin:auto;'> View Profile </a></div></div>")
+                    var card = $("<div>").addClass("col-md-4 profileCard").append("<div class='card text-center'> <a href='/users?member_id=" + res[i].id + "'><img class='card-img-top img-fluid' src='" + res[i].profilePhoto + "' alt = 'user profile picture' style='width: 100%'></a> <div class = 'card-body'> <h5 class-'card-title' style='text-align: center'>" + res[i].name + "</h5> <p class='card-text'>" + _str + "</p><a href='/users?member_id=" + res[i].id + "' class='btn btn-primary' id=profileBtn style='margin:auto;'> View Profile </a></div></div>")
                     $("#results").append(card);
                 };
             } else {

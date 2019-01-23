@@ -15,9 +15,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/members", (req, res) => {
-    db.User.findAll({
-      from: User
-    })
+    db.User.findAll()
     .then(data => {
       res.json(data);
     })
