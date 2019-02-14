@@ -18,8 +18,8 @@ $(document).ready(function () {
     event.preventDefault();
     var userData = {
       name: $("input#name-input").val().trim(),
-      username: $("input#username-input").val().trim(),
       email: emailInput.val().trim(),
+      username: $("input#username-input").val().trim(),
       password: passwordInput.val().trim(),
       location: $("input#location-input").val().trim(),
       about: $("textarea#about-input").val().trim(),
